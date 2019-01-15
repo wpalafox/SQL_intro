@@ -71,7 +71,30 @@ INSERT INTO todo_list VALUES (2, "vacuuming", 20);
 INSERT INTO todo_list VALUES (3, "Learn some stuff on KA", 30);
 INSERT INTO todo_list VALUES (4, "Practice scales on the Guitar", 25);
 
-SELECT SUM(minutes) FROM todo_list;
+SELECT SUM(minutes) FROM todo_l
+
+/*------------------PROJECT XC Bikes -------------------------------------*/
+
+CREATE TABLE xc_bikes (id INTEGER PRIMARY KEY, price INTEGER, make_model TEXT, frame TEXT, front_travel_mm INTEGER, rear_travel_mm INTEGER); 
+
+INSERT INTO xc_bikes VALUES (1, "Specialized Chisel Expert", 2000, "Alluminum", 100, 0);
+INSERT INTO xc_bikes VALUES (2, "Santa Cruz Highball S", 3400, "Carbon", 100, 0);
+INSERT INTO xc_bikes VALUES (3, "CHUMBA Stella",4200, "Titanium", 120, 0);
+INSERT INTO xc_bikes VALUES (4, "Santa Cruz Tallboy D", 2700, "Alluminum", 120, 110);
+INSERT INTO xc_bikes VALUES (5, "Yeti SB100", 5000, "Carbon", 120, 100); 
+INSERT INTO xc_bikes VALUES (6, "Specialized Epic Hardtail", 1350, "Alluminum", 100, 0);  
+INSERT INTO xc_bikes VALUES (7, "Trek Procaliber 9.8 SL", 5300, "Carbon", 100, 0);  
+INSERT INTO xc_bikes VALUES (8, "Giant Talon 29", 540, "Alluminum", 100, 0); 
+INSERT INTO xc_bikes VALUES (9, "BMC Fourstroke 01 One", 11000, "Carbon", 100, 100);
+INSERT INTO xc_bikes VALUES (10, "Scott Spark RC 900 World Race Cup", 5600, "Carbon", 100, 100); 
+INSERT INTO xc_bikes VALUES (11, "Specialized Epic Expert EVO", 5100, "Carbon", 100, 120);
+INSERT INTO xc_bikes VALUES (12, "Trek Top Fuel 8", 2500, "Alluminum", 100, 100);
+INSERT INTO xc_bikes VALUES (13, "Kona Hei Hei", 2300, "Alluminum", 100, 120); 
+INSERT INTO xc_bikes VALUES (14, "Team Marin", 1300, "Alluminum", 100, 0);
+INSERT INTO xc_bikes VALUES (15, "Salsa Woodsmoke", 2100, "Carbon", 120, 0);
+
+
+SELECT * FROM xc_bikes
 
 
 
