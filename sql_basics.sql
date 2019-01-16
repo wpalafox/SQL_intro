@@ -75,7 +75,7 @@ SELECT SUM(minutes) FROM todo_l
 
 /*------------------PROJECT XC Bikes -------------------------------------*/
 
-CREATE TABLE xc_bikes (id INTEGER PRIMARY KEY, price INTEGER, make_model TEXT, frame TEXT, front_travel_mm INTEGER, rear_travel_mm INTEGER); 
+CREATE TABLE xc_bikes (id INTEGER PRIMARY KEY, make_model INTEGER, price TEXT, frame TEXT, front_travel INTEGER, rear_travel INTEGER); 
 
 INSERT INTO xc_bikes VALUES (1, "Specialized Chisel Expert", 2000, "Alluminum", 100, 0);
 INSERT INTO xc_bikes VALUES (2, "Santa Cruz Highball S", 3400, "Carbon", 100, 0);
@@ -94,7 +94,26 @@ INSERT INTO xc_bikes VALUES (14, "Team Marin", 1300, "Alluminum", 100, 0);
 INSERT INTO xc_bikes VALUES (15, "Salsa Woodsmoke", 2100, "Carbon", 120, 0);
 
 
-SELECT * FROM xc_bikes
+SELECT * FROM xc_bikes;
+
+SELECT AVG(price) AS "Average Price" FROM xc_bikes;
+SELECT MAX(price) AS "Highest Price" FROM xc_bikes;
+
+SELECT price, make_model FROM xc_bikes
+ORDER BY price ASC;
+
+SELECT make_model AS "Hard Tails", price FROM xc_bikes
+WHERE rear_travel = 0
+ORDER BY price DESC; 
+
+
+
+
+
+
+
+
+
 
 
 
